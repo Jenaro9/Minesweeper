@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Vesper+Libre&display=swap");
+body {
+  font-family: "Vesper Libre", serif;
+}
+
+.header {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  font-size: 20px;
+}
+
+.contenedor-juego {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.juego {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  margin-bottom: 0.5rem;
+}
+
+.juego div {
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.marcada {
+  background-color: lightgray;
+  font-size: 48px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.back-red {
+  background-color: red !important;
+}
+
+.back-green {
+  background-color: green !important;
+}
+
+.oculto {
+  display: none;
+}
+
+.result {
+  font-size: 40px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(255, 0, 0, 0.822);
+  color: rgb(0, 0, 0);
+}

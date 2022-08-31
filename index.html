@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>BUSCAMINAS</h1>
+        <div class="formulario">
+          <div class="entrada">
+            <label for="tamaño">Tamaño </label>
+            <input id="tamaño" type="number" min="6" max="20" value="10" />
+          </div>
+          <div class="entrada">
+            <label for="num-bombas">Número de bombas</label>
+            <input id="num-bombas" type="number" min="1" value="20" />
+          </div>
+        </div>
+        <button class="btn-generar">Generar</button>
+      </div>
+    </div>
+    <div class="contenedor-juego hidden">
+      <div class="juego"></div>
+      <div class="result oculto">Perdiste</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
