@@ -7,25 +7,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="header">
-        <h1>BUSCAMINAS</h1>
-        <div class="formulario">
-          <div class="entrada">
-            <label for="tamaño">Tamaño </label>
-            <input id="tamaño" type="number" min="6" max="20" value="10" />
-          </div>
-          <div class="entrada">
-            <label for="num-bombas">Número de bombas</label>
-            <input id="num-bombas" type="number" min="1" value="20" />
-          </div>
+    <div class="header">
+      <h1>BUSCAMINAS</h1>
+      <div class="form">
+        <div class="options">
+          <p>
+            Tamaño:
+            <select name="size">
+              <option>Chico</option>
+              <option>Medio</option>
+              <option>Grande</option>
+            </select>
+          </p>
+          <p>
+            Dificultad:
+            <select name="difficulty">
+              <option>Facil</option>
+              <option>Medio</option>
+              <option>Dificil</option>
+            </select>
+          </p>
         </div>
-        <button class="btn-generar">Generar</button>
+        <button class="btn-generar">Start</button>
       </div>
     </div>
     <div class="contenedor-juego hidden">
+      <h2>
+        Banderas colocadas: <span id="num-banderas"></span> (faltan
+        <span id="banderas-restantes"></span>)
+      </h2>
       <div class="juego"></div>
-      <div class="result oculto">Perdiste</div>
+      <div class="resultado-juego"></div>
     </div>
   </body>
   <script src="script.js"></script>
