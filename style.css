@@ -1,72 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #393e46;
 }
 
 .header {
   position: absolute;
-  display: block;
-  font-size: 22px;
+  font-size: 2.4vh;
   text-align: center;
-  width: 25%;
-  height: 90%;
-  top: 5%;
-  background-color: grey;
+  width: 60vh;
+  height: 30vh;
+  background-color: #eeeeee;
+  left: 2vh;
+  top: 2vh;
 }
 
-.options {
-  font-size: 20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contenedor-juego {
+.form input {
+  width: 6vh;
+  height: 3vh;
+  text-align: center;
+}
+
+.btn-generate {
+  margin-top: 2vh;
+  outline: none;
+  width: 6.5vh;
+  height: 4vh;
+  border: none;
+  background-color: #a62828d2;
+  transition: 0.3s;
+}
+
+.btn-generate:active {
+  border: 1px solid #d38383d2;
+}
+
+.btn-generate:hover {
+  cursor: pointer;
+  background-color: #d38383d2;
+}
+
+.container-game {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50vh;
 }
 
-.juego {
+.game {
   display: flex;
   flex-wrap: wrap;
-  background-color: grey;
-  margin-bottom: 0.5rem;
+  background-color: #a62828d2;
+  margin-bottom: 2vh;
 }
 
-.juego :hover {
+.game :hover {
   cursor: pointer;
 }
 
-.juego div {
+.game div {
   height: 50px;
   width: 50px;
   box-sizing: border-box;
   border: 1px solid black;
 }
 
-.marcada {
-  background-color: lightgray;
+.marked {
+  background-color: #d38383d2;
   font-size: 25px;
   text-align: center;
-  line-height: -50%;
 }
 
-.bandera {
+.flag {
   font-size: 25px;
   text-align: center;
-  line-height: -50%;
-}
-.back-red {
-  background-color: red !important;
-}
-
-.back-green {
-  background-color: green !important;
-}
-
-.oculto {
-  display: none;
 }
 
 .result {
@@ -74,6 +89,10 @@ body {
   width: 300px;
   text-align: center;
   position: relative;
-  background-color: rgba(255, 0, 0, 0.822);
+  background-color: #a62828d2;
   color: rgb(0, 0, 0);
+}
+
+.ocult {
+  display: none;
 }

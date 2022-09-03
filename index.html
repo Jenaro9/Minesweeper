@@ -3,41 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Busca Mujeres</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
       <h1>BUSCAMINAS</h1>
       <div class="form">
-        <div class="options">
-          <p>
-            Tamaño:
-            <select name="size">
-              <option>Chico</option>
-              <option>Medio</option>
-              <option>Grande</option>
-            </select>
-          </p>
-          <p>
-            Dificultad:
-            <select name="difficulty">
-              <option>Facil</option>
-              <option>Medio</option>
-              <option>Dificil</option>
-            </select>
-          </p>
+        <div class="condition">
+          <label for="size">Tamaño del tablero (min. 6): </label>
+          <input id="size" type="number" min="6" value="6" />
         </div>
-        <button class="btn-generar">Start</button>
+        <div class="condition">
+          <label for="num-bombs">Cantidad de bombas (min. 1): </label>
+          <input id="num-bombs" type="number" min="1" value="4" />
+        </div>
       </div>
+      <button class="btn-generate">Jugar</button>
     </div>
-    <div class="contenedor-juego hidden">
-      <h2>
-        Banderas colocadas: <span id="num-banderas"></span> (faltan
-        <span id="banderas-restantes"></span>)
+    <div class="container-game hidden">
+      <h2 class="ocult">
+        Banderas colocadas: <span id="num-flags"></span> (faltan
+        <span id="remaining-flags"></span>)
       </h2>
-      <div class="juego"></div>
-      <div class="resultado-juego"></div>
+      <div class="game"></div>
+      <div class="result"></div>
     </div>
   </body>
   <script src="script.js"></script>
